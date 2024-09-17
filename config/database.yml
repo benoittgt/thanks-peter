@@ -24,6 +24,11 @@ development:
   <<: *default
   database: thanks_peter_development
 
+  # uncomment next line to use PostgreSQL 17 RC1 locally
+  # username: "thanks_peter"
+  # port: 5434 # 5433 for RC1
+  # password: 'password' # 'password' for RC1
+
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is

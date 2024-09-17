@@ -20,5 +20,6 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_12_093720) do
     t.datetime "sent_at", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["sender_reference", "status", "sent_at"], name: "index_docs_on_sender_reference_and_status_and_sent_at"
   end
 end
